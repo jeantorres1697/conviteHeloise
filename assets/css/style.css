@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("/assets/image/fundo.jpg");
+  background-image: url("/conviteHeloise/assets/image/fundo.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-attachment: fixed; /* A imagem fica fixa ao rolar a página */
@@ -148,3 +148,4 @@ img {
     background-position: left;
   }
 }
+
