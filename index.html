@@ -61,19 +61,51 @@
                 <input type="hidden" name="_next" value="https://seusite.com/agradecimento.html">
                 <input type="hidden" name="_subject" value="Nova Confirmação: Aniversário Minnie">
                 <div class="btn-presenca">
-                    <button type="submit" class="btn-submit">CONFIRMAR PRESENÇA</button>
+                    <button type="submit" id="btnConfirmar" class="btn-submit">CONFIRMAR PRESENÇA</button>
                 </div>
             </form>
-            <div class="divider">
-                <a href="https://maps.app.goo.gl/xGUfUUgzMo4EyJ4o6" target="_blank" class="btn">
-                    COMO CHEGAR (GPS)
-                </a>
-            </div>
         </div>
-
-
     </div>
+    <script>
 
+        const formulario = document.getElementById('meuFormulario');
+        const btn = document.getElementById('btnConfirmar');
+
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault(); // Impede o formulário de carregar outra página
+
+            const originalText = btn.innerText;
+            btn.innerText = "ENVIANDO...";
+            btn.disabled = true;
+
+
+            const dados = new FormData(this);
+
+
+            fetch(this.action, {
+                method: 'POST',
+                body: dados,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+
+                    btn.innerText = "REDIRECIONANDO...";
+                    window.location.href = "https://maps.app.goo.gl/ifyGhzCut3BWRfy59";
+                } else {
+
+                    alert("Ocorreu um erro ao confirmar. Tente novamente.");
+                    btn.innerText = originalText;
+                    btn.disabled = false;
+                }
+            }).catch(error => {
+                alert("Erro de conexão. Verifique sua internet.");
+                btn.innerText = originalText;
+                btn.disabled = false;
+            });
+        });
+    </script>
 </body>
 
 </html>
