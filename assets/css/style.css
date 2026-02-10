@@ -126,7 +126,7 @@ img {
 }
 
 .divider {
-  padding-top: 25px;
+  padding-top: 5px;
   display: flex;
   text-align: center;
 }
@@ -148,4 +148,5 @@ img {
     background-position: left;
   }
 }
+
 
