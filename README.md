@@ -3,7 +3,7 @@
 <img width="424" height="755" alt="image" src="https://github.com/user-attachments/assets/ee957890-2fa0-438b-afd7-1cc1028c5a65" />
 
 
-Este é um projeto de convite digital interativo desenvolvido para o aniversário de 3 anos da Heloíse Manuelle. O objetivo foi criar uma experiência moderna, prática e encantadora para os convidados, facilitando o acesso às informações e a confirmação de presença.
+Este é um projeto de convite digital interativo desenvolvido para o aniversário de 3 anos da minha filha Heloíse Manuelle. O objetivo foi criar uma experiência moderna, prática e encantadora para os convidados, facilitando o acesso às informações e a confirmação de presença.
 
 📍 **[Clique aqui para visualizar o projeto online](https://jeantorres1697.github.io/conviteHeloise/)**
 
